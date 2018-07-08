@@ -49,7 +49,7 @@ gulp.task('watch', function() {
 })
 
 /// 开发环境
-gulp.task('default', ['server', 'watch'])
+gulp.task('dev', ['server', 'watch'])
 
 //线上环境 scss
 gulp.task('buildScss', function() {
