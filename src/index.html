@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<div class="wrap">
+    <header>
+        <div class="head">
+            <ul>
+                <li class="active">推荐</li>
+                <li>女装</li>
+                <li>美食</li>
+                <li>居家</li>
+                <li>美妆个护</li>
+                <li>男装</li>
+                <li>内衣</li>
+                <li>鞋子</li>
+                <li>新潮</li>
+                <li>上新</li>
+            </ul>
+        </div>
+    </header>
+    <section></section>
+    <footer></footer>
+</div>
+<script src="js/Bscroll.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+    var scroll = new BScroll('.head', {
+        scrollX: true,
+        click: true
+    })
+    $('.head ul').on('click', 'li', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>
